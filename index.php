@@ -6,13 +6,15 @@
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <title>varietysongs</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, tv" />
 <link rel="stylesheet" href="css/style-print.css" type="text/css" media="print" />
+<link rel="shortcut icon" href="img/m_logo_by_darkmart84-d344w3b.png"  />
 </head>
+<body background="bgimage.jpg">
 <div id="wrapper">
   <div class="title">
     <div class="title-top">
@@ -23,7 +25,7 @@
               <div class="title-bottom-left">
                 <div class="title-top-right">
                   <div class="title-bottom-right">
-                    <h1><a href="#"><span>varietysongs</span></a></h1>
+                    <h1 ><a href="#"><span style ="color:brown">varietysongs</span></h2></a></h1>
                   </div>
                 </div>
             
@@ -40,7 +42,15 @@
     <div class="column-left" >
    
       <h2 style="color: #660000; text-align: center; letter-spacing:3px; font-size: 30px ">welcome to varietysongs</h2>
-      
+      		<?php if($_SESSION['ID'] == ''){ ?>
+	<a href="login.php"><h2 style="color: #660000; text-align:right";>  login</h2></a>
+	<a href="signup.php"><h2 style="color: #660000; text-align:right";> sign up</h2></a>
+	<a href="album.php"><h2 style="color: #660000; text-align:left";>Album</h2></a>
+		<?php } else { ?>
+		<li><a href="profile.php">Profile</a></li>
+  
+        <li><a href="logout.php">Logout</a></li>
+		<?php } ?>
     </div>
     
 </div>
