@@ -23,7 +23,7 @@
               <div class="title-bottom-left">
                 <div class="title-top-right">
                   <div class="title-bottom-right">
-                    <h1><a href="#"><span>variety</span> songs</a></h1>
+                    <h1><a href="#"><span>varietysongs</span></a></h1>
                   </div>
                 </div>
             
